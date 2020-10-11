@@ -7,6 +7,7 @@
     <title>Forecast</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 
@@ -18,6 +19,20 @@
     </div>
   </nav>
 <!-- End Nav Bar -->
+<br>
+<!-- main body -->
+<div class="container">
+    <div class="row">
+        <!-- empty section -->
+        <div class="col s2 m2 testBody"></div>
+        <div class="col s12 m8" id="mainBody">
+            <p>Today's forecast is...</p>
+        </div>
+        <!-- empty section -->
+        <div class="col s12 m2 testBody"></div>
+    </div>
+</div>
+<!-- main body -->
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript">
@@ -35,6 +50,7 @@ $.ajax({
     console.log(queryURL);
     console.log(response);
 })
+
 
 
 </script>
