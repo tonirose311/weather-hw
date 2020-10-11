@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forecast</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
 
 
@@ -17,9 +19,14 @@
   </nav>
 <!-- End Nav Bar -->
 
-var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
-      "q=Bujumbura,Burundi&appid=" + 47971c1c28872f0481f6a4f2123665c6;
+<script type="text/javascript">
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+// weather data
+var queryURL= "pro.openweathermap.org/data/2.5/forecast/hourly?q=chicago&appid=" + "47971c1c28872f0481f6a4f2123665c6";
+
+console.log(queryURL);
+
+</script>
 </body>
+
 </html>
