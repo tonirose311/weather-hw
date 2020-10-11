@@ -19,12 +19,23 @@
   </nav>
 <!-- End Nav Bar -->
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript">
 
 // weather data
-var queryURL= "pro.openweathermap.org/data/2.5/forecast/hourly?q=chicago&appid=" + "47971c1c28872f0481f6a4f2123665c6";
+const APIKey = "47971c1c28872f0481f6a4f2123665c6"
+var queryURL= "https://api.openweathermap.org/data/2.5/weatherq=" + cityName + "&appid=" + APIKey;
 
-console.log(queryURL);
+$.ajax({
+    url: queryURL,
+    method: "GET"
+})
+
+.then(function(response) {
+    console.log(queryURL);
+    console.log(response);
+})
+
 
 </script>
 </body>
